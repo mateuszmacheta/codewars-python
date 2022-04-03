@@ -1,25 +1,7 @@
-# This is a sample Python script.
+m4 = [[1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]]
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def minor_matrix(matrix, y, x):
+    minor = [row[:x] + row[x + 1:] for row in matrix[:y]+matrix[y+1:]]
+    return minor
 
-def clamp(minimum, x, maximum):
-    return max(minimum, min(x, maximum))
-
-
-def human_years_cat_years_dog_years(h):
-    cat = [15, 9, 4]
-    dog = [15, 9, 5]
-    return [h,
-            min(1, h)*cat[0] + clamp(0, h-1, 1)*cat[1] + max(0, h-2)*cat[2],
-            min(1, h)*dog[0] + clamp(0, h-1, 1)*dog[1] + max(0, h-2)*dog[2]
-            ]
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print(human_years_cat_years_dog_years(1))
-    print(human_years_cat_years_dog_years(2))
-    print(human_years_cat_years_dog_years(10))
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(minor_matrix(m4,2,1))
