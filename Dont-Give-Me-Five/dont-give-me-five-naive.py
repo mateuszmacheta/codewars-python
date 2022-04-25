@@ -4,15 +4,10 @@ import math
 
 def dont_give_me_five(start, end):
     result = 0
-    for i in range(start, end+1):
-        if not check_five(i):
+    for i in range(min(start,end), max(start,end)+1):
+        if str(i).find('5') == -1:
             result += 1
     return result
 
 
-def check_five(i: int):
-
-    return False
-
-
-dont_give_me_five(-17,9)
+print(dont_give_me_five(50, 0))
