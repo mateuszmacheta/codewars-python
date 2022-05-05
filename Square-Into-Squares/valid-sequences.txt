@@ -1,0 +1,338 @@
+Log
+12
+None should equal [1, 2, 3, 7, 9]
+Log
+6
+Test Passed
+Log
+50
+None should equal [1, 3, 5, 8, 49]
+Log
+44
+None should equal [2, 3, 5, 7, 43]
+Log
+625
+None should equal [2, 5, 8, 34, 624]
+Log
+5
+None should equal [3, 4]
+Log
+7100
+None should equal [2, 3, 5, 119, 7099]
+Log
+123456
+None should equal [1, 2, 7, 29, 496, 123455]
+Log
+1234567
+None should equal [2, 8, 32, 1571, 1234566]
+Log
+7654321
+None should equal [6, 10, 69, 3912, 7654320]
+Log
+4
+Test Passed
+Log
+7654322
+None should equal [1, 4, 11, 69, 3912, 7654321]
+Completed in 0.09ms
+Random tests
+Log
+1331059
+decompose(1331059): None should equal [2, 4, 44, 1631, 1331058]
+Log
+374387
+decompose(374387): None should equal [8, 22, 865, 374386]
+Log
+690661
+decompose(690661): None should equal [2, 4, 26, 1175, 690660]
+Log
+4256382
+decompose(4256382): None should equal [1, 2, 5, 62, 2917, 4256381]
+Log
+4376447
+decompose(4376447): None should equal [2, 10, 55, 2958, 4376446]
+Log
+3370228
+decompose(3370228): None should equal [1, 2, 3, 35, 2596, 3370227]
+Log
+1295805
+decompose(1295805): None should equal [1, 3, 6, 9, 51, 1609, 1295804]
+Log
+313633
+decompose(313633): None should equal [1, 792, 313632]
+Log
+3025750
+decompose(3025750): None should equal [1, 2, 4, 6, 69, 2459, 3025749]
+Log
+4751325
+decompose(4751325): None should equal [9, 62, 3082, 4751324]
+Log
+1556725
+decompose(1556725): None should equal [3, 12, 40, 1764, 1556724]
+Log
+2115028
+decompose(2115028): None should equal [1, 3, 10, 53, 2056, 2115027]
+Log
+2660841
+decompose(2660841): None should equal [1, 2, 14, 62, 2306, 2660840]
+Log
+4274360
+decompose(4274360): None should equal [2, 5, 69, 2923, 4274359]
+Log
+3358741
+decompose(3358741): None should equal [2, 10, 64, 2591, 3358740]
+Log
+3114693
+decompose(3114693): None should equal [2, 66, 2495, 3114692]
+Log
+2375833
+decompose(2375833): None should equal [2, 3, 7, 9, 59, 2179, 2375832]
+Log
+1629705
+decompose(1629705): None should equal [1, 2, 3, 5, 7, 36, 1805, 1629704]
+Log
+1647861
+decompose(1647861): None should equal [4, 6, 38, 1815, 1647860]
+Log
+3919981
+decompose(3919981): None should equal [2, 4, 8, 74, 2799, 3919980]
+Log
+162846
+decompose(162846): None should equal [2, 3, 7, 27, 570, 162845]
+Log
+34697
+decompose(34697): None should equal [1, 2, 3, 4, 5, 13, 263, 34696]
+Log
+3399196
+decompose(3399196): None should equal [2, 5, 8, 43, 2607, 3399195]
+Log
+3570554
+decompose(3570554): None should equal [1, 2, 5, 7, 38, 2672, 3570553]
+Log
+3922609
+decompose(3922609): None should equal [1, 2, 3, 4, 5, 11, 71, 2800, 3922608]
+Log
+568435
+decompose(568435): None should equal [2, 5, 22, 1066, 568434]
+Log
+1165810
+decompose(1165810): None should equal [2, 3, 11, 53, 1526, 1165809]
+Log
+3653561
+decompose(3653561): None should equal [1, 3, 5, 6, 29, 2703, 3653560]
+Log
+198024
+decompose(198024): None should equal [3, 6, 19, 629, 198023]
+Log
+2626817
+decompose(2626817): None should equal [3, 6, 18, 2292, 2626816]
+Log
+2294428
+decompose(2294428): None should equal [1, 4, 7, 25, 2142, 2294427]
+Log
+1919206
+decompose(1919206): None should equal [1, 27, 1959, 1919205]
+Log
+152544
+decompose(152544): None should equal [1, 3, 7, 18, 552, 152543]
+Log
+2365514
+decompose(2365514): None should equal [1, 2, 6, 19, 2175, 2365513]
+Log
+2512875
+decompose(2512875): None should equal [2, 8, 60, 2241, 2512874]
+Log
+4171745
+decompose(4171745): None should equal [2, 5, 54, 2888, 4171744]
+Log
+34025
+decompose(34025): None should equal [7, 20, 260, 34024]
+Log
+2268700
+decompose(2268700): None should equal [3, 7, 21, 2130, 2268699]
+Log
+2584211
+decompose(2584211): None should equal [1, 4, 5, 13, 41, 2273, 2584210]
+Log
+841904
+decompose(841904): None should equal [2, 3, 8, 39, 1297, 841903]
+Log
+1338177
+decompose(1338177): None should equal [1, 2, 3, 5, 8, 55, 1635, 1338176]
+Log
+3013825
+decompose(3013825): None should equal [1, 2, 3, 9, 23, 2455, 3013824]
+Log
+3783504
+decompose(3783504): None should equal [1, 2, 5, 11, 66, 2750, 3783503]
+Log
+444286
+decompose(444286): None should equal [1, 3, 4, 5, 34, 942, 444285]
+Log
+2380213
+decompose(2380213): None should equal [8, 60, 2181, 2380212]
+Log
+4623685
+decompose(4623685): None should equal [12, 75, 3040, 4623684]
+Log
+1368690
+decompose(1368690): None should equal [1, 2, 3, 7, 40, 1654, 1368689]
+Log
+560812
+decompose(560812): None should equal [1, 2, 4, 11, 1059, 560811]
+Log
+419537
+decompose(419537): None should equal [1, 4, 916, 419536]
+Log
+3863096
+decompose(3863096): None should equal [1, 10, 57, 2779, 3863095]
+Log
+1938462
+decompose(1938462): None should equal [1, 2, 3, 4, 5, 62, 1968, 1938461]
+Log
+3991828
+decompose(3991828): None should equal [1, 2, 55, 2825, 3991827]
+Log
+2752393
+decompose(2752393): None should equal [3, 6, 32, 2346, 2752392]
+Log
+1442150
+decompose(1442150): None should equal [1, 3, 5, 6, 32, 1698, 1442149]
+Log
+16598
+decompose(16598): None should equal [1, 3, 5, 6, 182, 16597]
+Log
+480953
+decompose(480953): None should equal [5, 6, 38, 980, 480952]
+Log
+2457897
+decompose(2457897): None should equal [1, 2, 5, 7, 25, 2217, 2457896]
+Log
+2262937
+decompose(2262937): None should equal [1, 2, 3, 7, 41, 2127, 2262936]
+Log
+4884417
+decompose(4884417): None should equal [1, 2, 3, 13, 55, 3125, 4884416]
+Log
+4595451
+decompose(4595451): None should equal [1, 7, 13, 61, 3031, 4595450]
+Log
+3823290
+decompose(3823290): None should equal [3, 7, 36, 2765, 3823289]
+Log
+1649641
+decompose(1649641): None should equal [2, 4, 6, 37, 1816, 1649640]
+Log
+3969227
+decompose(3969227): None should equal [3, 5, 11, 53, 2817, 3969226]
+Log
+2469928
+decompose(2469928): None should equal [1, 3, 5, 6, 50, 2222, 2469927]
+Log
+4008092
+decompose(4008092): None should equal [1, 10, 39, 2831, 4008091]
+Log
+3757574
+decompose(3757574): None should equal [1, 2, 6, 45, 2741, 3757573]
+Log
+1629993
+decompose(1629993): None should equal [1, 2, 5, 9, 43, 1805, 1629992]
+Log
+1584204
+decompose(1584204): None should equal [2, 9, 59, 1779, 1584203]
+Log
+489678
+decompose(489678): None should equal [3, 35, 989, 489677]
+Log
+1999166
+decompose(1999166): None should equal [1, 5, 48, 1999, 1999165]
+Log
+3722480
+decompose(3722480): None should equal [1, 3, 7, 54, 2728, 3722479]
+Log
+3230501
+decompose(3230501): None should equal [1, 2, 3, 9, 65, 2541, 3230500]
+Log
+4875527
+decompose(4875527): None should equal [3, 8, 64, 3122, 4875526]
+Log
+4409922
+decompose(4409922): None should equal [11, 69, 2969, 4409921]
+Log
+4134805
+decompose(4134805): None should equal [2, 6, 10, 62, 2875, 4134804]
+Log
+2398435
+decompose(2398435): None should equal [2, 6, 27, 2190, 2398434]
+Log
+288775
+decompose(288775): None should equal [1, 3, 5, 8, 37, 759, 288774]
+Log
+4935448
+decompose(4935448): None should equal [1, 2, 3, 10, 70, 3141, 4935447]
+Log
+250180
+decompose(250180): None should equal [1, 5, 22, 707, 250179]
+Log
+3809676
+decompose(3809676): None should equal [1, 2, 4, 7, 41, 2760, 3809675]
+Log
+1309499
+decompose(1309499): None should equal [7, 32, 1618, 1309498]
+Log
+458918
+decompose(458918): None should equal [1, 3, 5, 6, 958, 458917]
+Log
+1228477
+decompose(1228477): None should equal [2, 4, 38, 1567, 1228476]
+Log
+2651086
+decompose(2651086): None should equal [1, 3, 4, 5, 54, 2302, 2651085]
+Log
+3358007
+decompose(3358007): None should equal [1, 3, 11, 51, 2591, 3358006]
+Log
+3004858
+decompose(3004858): None should equal [1, 3, 48, 2451, 3004857]
+Log
+2613612
+decompose(2613612): None should equal [3, 7, 37, 2286, 2613611]
+Log
+1505708
+decompose(1505708): None should equal [3, 5, 34, 1735, 1505707]
+Log
+4188661
+decompose(4188661): None should equal [1, 2, 12, 44, 2894, 4188660]
+Log
+2820225
+decompose(2820225): None should equal [2, 4, 8, 67, 2374, 2820224]
+Log
+1359517
+decompose(1359517): None should equal [2, 10, 55, 1648, 1359516]
+Log
+3309197
+decompose(3309197): None should equal [3, 8, 56, 2572, 3309196]
+Log
+3906903
+decompose(3906903): None should equal [4, 42, 2795, 3906902]
+Log
+4256282
+decompose(4256282): None should equal [1, 3, 8, 60, 2917, 4256281]
+Log
+3709522
+decompose(3709522): None should equal [5, 8, 65, 2723, 3709521]
+Log
+1096144
+decompose(1096144): None should equal [2, 3, 5, 43, 1480, 1096143]
+Log
+3170293
+decompose(3170293): None should equal [1, 2, 16, 2518, 3170292]
+Log
+899311
+decompose(899311): None should equal [4, 18, 1341, 899310]
+Log
+1100064
+decompose(1100064): None should equal [1, 2, 7, 28, 1483, 1100063]
+Log
+3096374
+decompose(3096374): None should equal [1, 2, 3, 5, 8, 50, 2488, 3096373]
