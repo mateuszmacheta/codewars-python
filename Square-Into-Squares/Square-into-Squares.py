@@ -1,20 +1,29 @@
 # 4 kyu Square into Squares
 # https://www.codewars.com/kata/54eb33e5bc1a25440d000891/train/python
+import math as m
+
 
 def decompose(n):
-    total = n**2
-    x = n
-    x -= 1
-    result = []
-    while x > 1:
-        square = x**2
-        total -= square
-        if total == 0:
-            result.insert(0, x)
-            return result if len(result) >= 2 else None
-        if total > 0:
-            result.insert(0, x)
-        x -= 1
+    result = dec_inner(n, n**2)
+    if result: return result[:-1:]
     return None
+
+
+def dec_inner(n, total):
+    if total == 0:
+        return [n]
+    i = n -1
+    while i > 0:
+        if total - i**2 >= 0:
+            result = dec_inner(i, total - i**2)
+            i = m.isqrt(total - i ** 2)
+            if result:
+                result.append(n)
+                return result
+        i -= 1
+    return None
+
+
+
 
 print(decompose(5))
