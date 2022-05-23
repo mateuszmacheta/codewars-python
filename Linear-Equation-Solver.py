@@ -11,10 +11,10 @@ def solve(*equations):
     free_matrix = []
     for eq in equations:
         left, right = eq.split('=')
-        var_matches = re.match(var_pattern, left)
-        free_matches = re.match(free_pattern, left)
+        var_matches = re.findall(var_pattern, left)
+        free_matches = re.findall(free_pattern, left)
         print('x')
 
     return 0
 
-solve("2x+8y=4", "-x+4y=14")
+print(solve("2x+8y=4", "-x+4y=14"))

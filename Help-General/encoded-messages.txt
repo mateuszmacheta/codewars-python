@@ -1,0 +1,17 @@
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+bdhpF,82QsLirJejtNmzZKgnB3SwTyXG ?.6YIcflxVC5WE94UA1OoD70MkvRuPqHabdhpF,82QsLir
+---------------------
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+dhpF,82QsLirJejtNmzZKgnB3SwTyXG ?.6YIcflxVC5WE94UA1OoD70MkvRuPqHabdhp
+---------------------
+!@#$%^&*()_+-
+!@#$%^&*()_+-
+---------------------
+for w in "abcdefghijklmnopqrstuvwxyz":
+        a += encode(  "" + w)[0]
+        b += encode( "_" + w)[1]
+        c += encode("__" + w)[2]
+
+bdfhjlnprtvxzBDFHJLNPRTVXZ
+dhlptxBFJNRVZ37,aeimquyCGK
+hpxFNV3,emuCKS08bjrzHPX5 g
