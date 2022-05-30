@@ -1,7 +1,8 @@
-def ip_to_int32(ip):
-    octets = ip.split('.')
-    return (int(octets[0]) << 24) + (int(octets[1]) << 16) + (int(octets[2]) << 8) + int(octets[3])
+import numpy as np
+
+def transpose(m): return [[m[j][i] for j in range(len(m))] for i in range(len(m[0]))]
+
 
 
 if __name__ == '__main__':
-    print(ip_to_int32("128.114.17.104"))
+    print(transpose([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
