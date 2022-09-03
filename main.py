@@ -1,28 +1,17 @@
-from itertools import cycle
-
-notes = ['A',  'A#',  'B',  'C',  'C#',  'D',  'D#',  'E',  'F',  'F#',  'G',  'G#']
-strings = ['E', 'B', 'G', 'D', 'A', 'E']
-modes = {[2,2,1,2,2,2,1]: 'Jônio',
-[2,1,2,2,2,1,2]: 'Dórico',
-[1,2,2,2,1,2,2]: 'Frígio',
-[2,2,2,1,2,2,1]: 'Lídio',
-[2,2,1,2,2,1,2]: 'Mixolídio',
-[2,1,2,2,1,2,2]: 'Eólio',
-[1,2,2,1,2,2,2]: 'Lócrio'}
+from string import ascii_lowercase as l
 
 
-def tab_reader(tab):
-    notes = get_notes(tab)
-    return notes
+def find_the_number_plate(customer_id):
+    id = customer_id + 1
+    s = len(l)
+    return '{}{}{}{:03d}'.format(
+        l[id // 1000 % s],
+        l[id // (s * 1000) % s],
+        l[id // (s * s * 1000) % s],
+        id % 1000
+    )
 
 
 if __name__ == '__main__':
-    x = '''
-            e|-19-19-19-21-|-16-------16-|----16-17----|-------------|
-            B|-------------|----17-17----|-19-------19-|-16----16----|
-            G|-------------|-------------|-------------|----18----16-|
-            D|-------------|-------------|-------------|-------------|
-            A|-------------|-------------|-------------|-------------|
-            E|-------------|-------------|-------------|-------------|
-            '''
-    print(tab_reader(x))
+    # print(find_the_number_plate(3),'aaa004')
+    print(find_the_number_plate(1000),'baa000')
