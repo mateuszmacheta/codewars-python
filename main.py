@@ -1,10 +1,23 @@
-def myFun(a, b, c):
-    if a > b > c:
-        return a
-    if b > a:
-        return b
-    return c
+def find_maximum_from_file(filename):
+    try:
+        with open(filename, 'r') as file:
+            numbers = [int(line.strip()) for line in file]
 
+        if numbers:
+            return max(numbers)
+        else:
+            print("The file is empty.")
+            return None
+    except FileNotFoundError:
+        print(f"File '{filename}' not found.")
+        return None
+    except ValueError:
+        print("Error parsing numbers from the file.")
+        return None
 
-if __name__ == '__main__':
-    print(myFun(10, 5, 2))
+# Call the function and pass the filename
+filename = 'nums.txt'
+max_value = find_maximum_from_file(filename)
+
+if max_value is not None:
+    print(f"The maximum value from '{filename}' is: {max_value}")

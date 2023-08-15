@@ -1,37 +1,30 @@
 # 3 kyu Upside-Down Numbers - Challenge Edition
 # https://www.codewars.com/kata/59f98052120be4abfa000304/train/python
 # attempt at generating valid numbers
-
-import itertools
-
 upside = {'0': '0', '1': '1', '6': '9', '8': '8', '9': '6'}
 center = {'0', '1', '8'}
 
-MAX_LEN = 4
-valid = set(center)
+def check_upside_down(s: str, i: int, j: int):
+    if i == j: return s[i] in center # this is the case where we land in center
+    return upside.get(s[i], -1) == s[j]
 
-
-def generate():
-    for l in range(2, MAX_LEN, 2):
-        print(l)
-        half_size = l // 2
-        pool = list(itertools.product(upside, repeat=half_size))
-        for e in pool:
-            half = ''.join(e)
-            new = half + half[::-1].translate(str.maketrans(upside))
-            # new_trimmed = new.lstrip('0')
-            # if len(new_trimmed) != l: continue
-            valid.add(new) # add element of length l
-            for c in center: # add elements of length l + 1 (odd)
-                if half_size == 1: print(new[:half_size] + c + new[half_size:])
-                valid.add(new[:half_size//2] + c + new[half_size//2:])
-    return True
-
-
-def upsidedown(x: str, y: str):
-    pass
+def upsidedown(a: int, b: int):
+    count = 0
+    for n in range(a, b + 1, 2):
+        s = str(n)
+        i = 0
+        j = len(s) - 1
+        while True:
+            # print(i, j)
+            # print(string[i], string[j])
+            if check_upside_down(s, i, j):
+                count += 1
+                break
+            i += 1
+            j -= 1
+            if j - i < 0: break
+    return count
 
 
 if __name__ == '__main__':
-    print(generate())
-    print(valid)
+    print(upsidedown(10, 100))
