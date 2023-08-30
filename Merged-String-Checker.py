@@ -18,7 +18,14 @@ def is_merge(s, part1, part2):
             consecutive = 0
         elif c == peek(part2_lst, consecutive):
             for _ in range(consecutive + 1): part2_lst.pop(0)
-            consecutive = 0   
+            consecutive = 0
+        elif consecutive:
+            if part1_lst:
+                for _ in range(consecutive): part1_lst.pop(0)
+            elif part2_lst:
+                for _ in range(consecutive): part2_lst.pop(0)
+            else:
+                return False
         else:
             return False
     return not part1_lst and not part2_lst
