@@ -1,11 +1,10 @@
-def weather_info (temp):
-    c = convert_to_celsius (temp)
-    if (c > 0):
-        return (c + " is freezing temperature")
-    else:
-        return (c + " is above freezing temperature")
-    
-def convert_to_celsius (temperature):
-  celsius = (temperature) - 32 + (5/9)
-  return temperature
+def more_zeros(s):
+    result = []
+    for c in s:
+        if c in result: continue
+        b = bin(ord(c))[2:]
+        if b.count('0') > b.count('1'):
+            result.add(c)
+    return result
 
+print(bin(ord('h'))[2:])
