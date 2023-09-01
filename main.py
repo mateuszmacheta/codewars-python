@@ -1,10 +1,12 @@
-def more_zeros(s):
-    result = []
-    for c in s:
-        if c in result: continue
-        b = bin(ord(c))[2:]
-        if b.count('0') > b.count('1'):
-            result.add(c)
-    return result
+def f(n, m):
+    print(n, m)
+    if n < m:
+        return n * (n + 1) // 2
+    quotient, remainder = divmod(n, m)
+    print(quotient, remainder)
+    return quotient*(m * (m - 1) // 2) + remainder * (remainder + 1) // 2
 
-print(bin(ord('h'))[2:])
+
+# print(f(10, 5), 20)
+# print(f(20, 20), 190)
+print(f(15, 10), 60)
