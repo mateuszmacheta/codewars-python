@@ -4,8 +4,7 @@ import math
 
 
 def decrypt(s, n):
-    print(f"decrypt: {s}, {n}")
-    if n < 0 or (s is not None and len(s) < 2):
+    if n <= 0 or (s and len(s) < 2):
         return s
     result = s
     for i in range(0, n):
@@ -15,18 +14,16 @@ def decrypt(s, n):
         right = result[len(result) // 2:]
         result = ''
         for j in range(0, len(left)):
-            #print(right[j],left[j])
             result += right[j] + left[j]
         result = result.replace('©', '')
-
+    
     return result
 
 
 def encrypt(s, n):
-    print(f"encrypt: {s}, {n}")
-    if n < 0 or len(s) < 2:
+    if n <= 0 or (s is not None and len(s) < 2):
         return s
-    for i in range(0, n % (len(s) // 2)):
+    for i in range(0, n):
         s = s[1::2] + s[0::2]
     return s
 
