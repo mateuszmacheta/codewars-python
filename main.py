@@ -1,5 +1,13 @@
-from math import factorial
+from collections import defaultdict
 
-am_i_wilson = lambda P: P - 1 > -1 and (factorial(P-1) + 1) / (P * P) % 1 == 0
+def first_non_repeated(s):
+    seen = defaultdict(int)
+    for c in s:
+        seen[c] += 1
+    for key, value in seen.items():
+        if value == 1:
+            return key
 
-print(am_i_wilson(5))
+print(first_non_repeated("test"),'e')
+print(first_non_repeated("teeter"),'r')
+print(first_non_repeated("1122321235121222"),'5')
