@@ -12,7 +12,9 @@ class Event():
         self.handler.remove(handler)
 
     def emit(self, *args):
-        self.handler[-1](*args)
+        if self.handler:
+            for handler in self.handler:
+                handler(*args)
 
 
 if __name__ == '__main__':
