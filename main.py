@@ -1,13 +1,9 @@
-from collections import defaultdict
+def sxor(n):
+    a = n
+    for i in range(n):
+        a = a ^ i
+    return a
 
-def first_non_repeated(s):
-    seen = defaultdict(int)
-    for c in s:
-        seen[c] += 1
-    for key, value in seen.items():
-        if value == 1:
-            return key
 
-print(first_non_repeated("test"),'e')
-print(first_non_repeated("teeter"),'r')
-print(first_non_repeated("1122321235121222"),'5')
+for i in range(20):
+    print(f"{i}\t{sxor(i)}\t{i%4}")

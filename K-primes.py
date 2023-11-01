@@ -1,31 +1,44 @@
 # 5 kyu k-Primes
 # https://www.codewars.com/kata/5726f813c8dcebf5ed000a6b/train/python
-import time
-from math import sqrt, ceil
+from gmpy2 import next_prime
+from functools import lru_cache
 
-start_time = time.time()
-LIMIT = 20000000
-MAX_RANGE = ceil(sqrt(LIMIT))
+@lru_cache
+def check_kprime(n: int, k: int) -> bool: # assuming k >= 2 always
+    if n < 2: return False
+    prime = 2 # first prime that we're goint to start dividing
+    number = n
+    prime_factors = 0
+    n_2 = n // 2
+    while True:
+        if prime > n_2: return prime_factors == k # stop looking if we cross sqrt(n) limit
+        quotient, remainder = divmod(number, prime)
+        if remainder == 0: # this prime is a factor as it divides without remainder
+            if quotient == next_prime(quotient - 1): # finish when quotient is also prime
+                prime_factors += 2
+                return prime_factors == k
+            if prime_factors >= k: return False # it has already more than k factors
+            prime_factors += 1
+            number = quotient
+        else:
+            prime = next_prime(prime)
 
-prime_nums = []
-numbers = [True] * (MAX_RANGE + 1)
+def count_Kprimes(k: int, start: int, end: int) -> bool:
+    result = []
+    for n in range(start, end + 1, 1):
+        if check_kprime(n, k): result.append(n)
+    return result
 
-# Commencing sieve
-p = 2
-while p * p <= MAX_RANGE:
-    if numbers[p]:
-        for i in range(p * p, MAX_RANGE + 1, p):
-            numbers[i] = False
-    p += 1
+print(count_Kprimes(5, 500, 600))
 
-for num in range(2, MAX_RANGE + 1):
-    if numbers[num]:
-        prime_nums.append(num)
+# test for k = 2
+# for n in [4, 6, 9, 10, 14, 15, 21, 22]:
+#     print(check_kprime(n, 2))
 
-# Record the end time
-end_time = time.time()
+# test for k = 3
+# for n in [8, 12, 18, 20, 27, 28, 30]:
+#     print(check_kprime(n, 3))
 
-# Calculate the elapsed time
-elapsed_time = end_time - start_time
-print(len(prime_nums))
-print(elapsed_time)
+# test for k = 5
+# for n in [32, 48, 72, 80, 108, 112]:
+#     print(check_kprime(n, 5))

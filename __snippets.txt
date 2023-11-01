@@ -1,0 +1,2 @@
+# prime numbers library that works
+from gmpy2 import next_prime
