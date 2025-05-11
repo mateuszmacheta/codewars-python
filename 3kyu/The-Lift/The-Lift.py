@@ -10,18 +10,37 @@ class Dinglemouse(object):
         self.TOP_FLOOR = 6
         self.move = 1
         self.passengers = []
+        self.history = []
 
     def make_move(self):
-        # no passengeres
+        self.leave_and_enter_lift()
         if not self.passengers:
             floor_to_go = self.find_nearest_passenger()
 
     def find_nearest_passenger(self):
-        # go up and down at the same time
+        pass
+
+    def leave_and_enter_lift(self):
+        # leaving if passenger reached their floor
+        for e in self.passengers:
+            if e == self.floor:
+                print(f'Passenger {e} leaves the lift at floor {self.floor}')
+                self.passengers.remove(e)
+
+        # checking if passengers want to go
+        for e in self.queues[self.floor]:
+            if self.move == 1:
+                if e > self.floor:
+                    self.passengers.append(self.queues[self.floor].pop())
         pass
 
     def theLift(self):
-        return []
+        i = 0
+        while any(self.queues): # there are still passengers:
+            i += 1
+            print(f'Making move {i:02}')
+            self.make_move()
+        return self.history
     
 
 tests = [[ ( (),   (),    (5,5,5), (),   (),    (),    () ),     [0, 2, 5, 0]          ],
